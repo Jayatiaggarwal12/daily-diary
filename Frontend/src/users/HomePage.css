@@ -1,0 +1,326 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Color Scheme */
+:root {
+    --navy: #1c3a57;
+    --gold: #f4c542;
+    --white: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navy);
+    padding: 20px 50px;
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.institute-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.header-right nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: var(--gold);
+    color: var(--navy);
+    min-height: 100vh;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: var(--navy);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 15px 30px;  /* Larger button */
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--gold);
+    color: var(--navy);
+    border: 2px solid var(--navy);
+}
+
+.hero-image {
+    width: 500px;
+    height: 400px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Tagline Section */
+.tagline-section {
+    padding: 80px 50px;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.tagline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: var(--white);
+}
+
+.tagline-image-container {
+    width: 500px;
+    height: 400px;
+}
+
+.tagline-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 80px 50px;
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.courses-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--navy);
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+.course-card p {
+    margin: 10px 0;
+}
+
+.course-card .cta-button {
+    margin-top: 15px;
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.course-card .cta-button:hover {
+    background-color: var(--navy);
+    color: var(--gold);
+}
+
+/* Events Section */
+.events-section {
+    padding: 80px 50px;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.events-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--gold);
+}
+
+.events-calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    background-color: var(--gold);
+    color: var(--navy);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 80px 50px;
+    background-color: var(--gold);
+    color: var(--navy);
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 80px 50px;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.social-icons a {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--white);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 50px;
+    background-color: var(--gold);
+    color: var(--navy);
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--navy);
+}
+
+.testimonial {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 50px;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--gold);
+}
+
+.faq-item {
+    background-color: var(--gold);
+    color: var(--navy);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: var(--white);
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+  
+  

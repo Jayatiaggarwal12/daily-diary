@@ -1,0 +1,91 @@
+/* Container for the teacher dashboard */
+.teacher-dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5; /* Light background for contrast */
+  }
+  
+  /* Dashboard content */
+  .dashboard-content {
+    flex: 1; /* Take up remaining space after sidebar */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow-y: auto;
+  }
+  
+  /* Header for the dashboard */
+  h2 {
+    color: #002f6c; /* Navy color for header */
+    margin-bottom: 20px;
+  }
+  
+  /* Section styling */
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #002f6c; /* Navy border */
+    border-radius: 8px;
+    background-color: #f7f7f7; /* Light grey background for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Slight shadow for separation */
+  }
+  
+  /* Section headings */
+  h3 {
+    color: #d4af37; /* Gold color for section headings */
+    margin-bottom: 15px;
+  }
+  
+  /* Button styles */
+  button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background-color: #002f6c; /* Navy background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #d4af37; /* Gold on hover */
+    color: #002f6c; /* Navy text */
+  }
+  
+  /* Input and textarea styling */
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Table styling for grading section */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #002f6c; /* Navy border for table */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #002f6c; /* Navy background for headers */
+    color: #fff; /* White text for headers */
+  }
+  
+  table td {
+    background-color: #f7f7f7; /* Light background for table rows */
+  }
+  

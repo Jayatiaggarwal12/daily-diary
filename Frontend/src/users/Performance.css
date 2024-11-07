@@ -1,0 +1,24 @@
+.performance {
+    padding: 20px;
+  }
+  
+  .performance h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .performance ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .performance li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .performance p {
+    margin: 0;
+  }
+  

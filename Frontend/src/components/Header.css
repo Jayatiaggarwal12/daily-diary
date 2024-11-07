@@ -1,0 +1,11 @@
+.header {
+  background-color: #4a90e2; /* Header background */
+  color: #fff; /* Text color */
+  padding: 15px;
+  border-radius: 5px; /* Optional rounded corners */
+  text-align: center;
+}
+
+.header-title {
+  margin: 0; /* Remove default margin */
+}

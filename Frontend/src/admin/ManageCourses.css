@@ -1,0 +1,50 @@
+.manage-courses {
+    padding: 20px;
+  }
+  
+  .manage-courses h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .add-course-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .course-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .course-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  

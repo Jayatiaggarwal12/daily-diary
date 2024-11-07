@@ -1,0 +1,142 @@
+/* Full-page gradient background that covers the entire viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #002a4d, #f0e6cc); /* Navy to soft beige */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Main container styling to center content and provide full viewport height */
+.registration-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Layout container for form and image */
+.registration-content {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  background: rgba(0, 42, 77, 0.9); /* Dark navy overlay with higher opacity */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  color: #ffffff;
+}
+
+/* Registration form container */
+.registration-form-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 450px;
+}
+
+/* Form styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registration-form-container h2 {
+  font-size: 32px; /* Increased font size for better visibility */
+  color: #ffffff; /* Set heading color to white */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+}
+
+.registration-form input {
+  width: 90%;
+  padding: 14px;
+  margin: 5px 0;
+  border: 2px solid #80b3ff; /* Thicker light blue border */
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for input */
+}
+
+.registration-form input::placeholder {
+  color: #666;
+}
+
+.registration-form button {
+  padding: 14px;
+  background-color: #004080; /* Deep navy button */
+  color: #f0e6cc; /* Light beige text */
+  border: 2px solid #0066cc; /* Lighter border for the button */
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform effect */
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for button */
+}
+
+.registration-form button:hover {
+  background-color: #0066cc; /* Lighter navy for hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Form footer */
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #f0e6cc; /* Light beige for footer text */
+}
+
+.form-footer a {
+  color: #66ff66; /* Bright green for links */
+  text-decoration: none;
+  font-weight: bold; /* Make the link text bold */
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Student image container */
+.student-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.student-image {
+  max-width: 80%; /* Slightly reduced size for balance */
+  height: auto;
+  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.5)); /* Slightly darker shadow */
+  border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .registration-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-image-container {
+    display: none;
+  }
+
+  .registration-form-container {
+    max-width: 100%;
+  }
+}
+
+
+
+

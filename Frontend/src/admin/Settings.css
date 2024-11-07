@@ -1,0 +1,58 @@
+.settings {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .settings h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: center;
+  }
+  
+  .settings form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settings label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .settings input[type="text"],
+  .settings input[type="password"],
+  .settings select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+  
+  .settings input[type="text"]:focus,
+  .settings input[type="password"]:focus,
+  .settings select:focus {
+    border-color: #80bdff;
+    outline: none;
+  }
+  
+  .settings button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .settings button:hover {
+    background-color: #0056b3;
+  }
+  

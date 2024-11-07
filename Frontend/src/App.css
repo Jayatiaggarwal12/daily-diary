@@ -1,0 +1,149 @@
+/* Full-page gradient background that covers the entire viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #002a4d, #f0e6cc); /* Navy to soft beige */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Main container styling to center content and provide full viewport height */
+.registration-page, .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Layout container for form and image */
+.registration-content, .form-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  background: rgba(0, 42, 77, 0.8); /* Dark navy overlay */
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+/* Registration form container */
+.registration-form-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 450px;
+}
+
+/* Form styling */
+.registration-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registration-form h2, .form-container h2 {
+  font-size: 28px;
+  color: gold; /* Consistent heading color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], .registration-form input {
+  width: 90%;
+  padding: 14px;
+  margin: 5px 0;
+  border: 1px solid #80b3ff; /* Light blue border */
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for input */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #6e8efb;
+  outline: none;
+}
+
+button, .registration-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #004080; /* Deep navy button */
+  color: #f0e6cc; /* Light beige text */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+button:hover, .registration-form button:hover {
+  background: linear-gradient(135deg, #4a7cff, #9146f9);
+  transform: scale(1.05);
+}
+
+/* Form footer */
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.form-footer a, a {
+  color: gold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-footer a:hover, a:hover {
+  text-decoration: underline;
+}
+
+/* Remember me and password container */
+.password-container, .remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Student image container */
+.student-image-container, .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.student-image, .image-container img {
+  max-width: 85%;
+  height: auto;
+  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.3));
+  border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .registration-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-image-container, .image-container {
+    display: none;
+  }
+
+  .registration-form-container {
+    max-width: 100%;
+  }
+}
+

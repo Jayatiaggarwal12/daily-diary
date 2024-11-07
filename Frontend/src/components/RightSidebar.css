@@ -1,0 +1,23 @@
+.right-sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .calendar, .task-list {
+    margin-bottom: 20px;
+  }
+  
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    margin-bottom: 10px;
+  }
+  

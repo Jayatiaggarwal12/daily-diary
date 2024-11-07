@@ -1,0 +1,25 @@
+.sidebar {
+  width: 200px; /* Fixed width for sidebar */
+  background-color: #2c3e50; /* Sidebar background */
+  color: #ecf0f1; /* Text color */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.sidebar li {
+  margin: 15px 0; /* Spacing between items */
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

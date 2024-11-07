@@ -1,0 +1,94 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Adjusted layout */
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.sidebar,
+.right-sidebar {
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
+.dashboard-content {
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 30%; /* Allows cards to wrap flexibly */
+}
+
+.progress-section {
+  margin-top: 2rem;
+}
+
+.task-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 0.5rem;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #1565c0;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.calendar-date {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

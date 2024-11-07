@@ -1,0 +1,132 @@
+/* Full-page gradient background for the login page */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #002a4d, #f0e6cc); /* Navy to soft beige */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Main container styling for the login page */
+.teacher-login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Content area styling */
+.login-content {
+  background: rgba(0, 42, 77, 0.9); /* Dark navy overlay */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Header styling */
+.login-content h1 {
+  font-size: 32px; /* Increased font size for better visibility */
+  color: #ffffff; /* White color for heading */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+}
+
+/* Error message styling */
+.error {
+  color: #ff4d4d; /* Bright red for error messages */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 14px;
+  border: 2px solid #80b3ff; /* Light blue border */
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for input */
+}
+
+.login-form input::placeholder {
+  color: #666;
+}
+
+.login-form button {
+  padding: 14px;
+  background-color: #004080; /* Deep navy button */
+  color: #f0e6cc; /* Light beige text */
+  border: 2px solid #0066cc; /* Lighter border for button */
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform effect */
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for button */
+}
+
+.login-form button:hover {
+  background-color: #0066cc; /* Lighter navy for hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Form footer styling */
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #f0e6cc; /* Light beige for footer text */
+}
+
+.form-footer a {
+  color: #66ff66; /* Bright green for links */
+  text-decoration: none;
+  font-weight: bold; /* Make the link text bold */
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Teacher image container */
+.teacher-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Allow the image container to grow */
+  max-width: 450px; /* Limit max width of image */
+  padding: 20px;
+}
+
+.teacher-image {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+  border-radius: 12px; /* Rounded corners for image */
+  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.3)); /* Shadow effect for the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-content {
+    width: 90%; /* Make content full-width on smaller screens */
+  }
+
+  .teacher-image-container {
+    display: none; /* Hide image on smaller screens */
+  }
+}
+
+  

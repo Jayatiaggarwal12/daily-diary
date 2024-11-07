@@ -1,0 +1,44 @@
+.dashboard-cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    font-size: 1.5em;
+  }
+  
+  .card-value {
+    font-weight: bold;
+  }
+  
+  .card-change {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  .card-change.increase {
+    color: green;
+  }
+  
+  .card-change.decrease {
+    color: red;
+  }
+  
+  .card-change.stable {
+    color: gray;
+  }
+  
